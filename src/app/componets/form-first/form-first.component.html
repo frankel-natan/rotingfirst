@@ -1,0 +1,7 @@
+
+
+
+<form #userForm="ngForm" (ngSubmit)="apiPost(userForm.value)">
+  <input type="text" ngModel name="name" placeholder="entername">
+  <button type="submit">submit</button>
+</form>

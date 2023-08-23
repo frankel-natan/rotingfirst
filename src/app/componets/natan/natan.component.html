@@ -1,0 +1,21 @@
+
+
+  <app-zeaev
+
+  *ngFor="let i of listChild
+  let x = index;
+  let f = first;
+  let z = last;"
+
+  [lisrchil]="i"
+  [num]="x+20"
+  [indexn]="x"
+  (delEvent)="del2($event)"
+  >
+
+</app-zeaev>
+
+
+<div class="com" *ngFor="let i of listChild"></div>
+  <h3>{{listChild[0].name}}</h3>
+

@@ -1,0 +1,22 @@
+
+<!-- <div *ngIf="!!movis " class="movitsComponents">nv {{titel}} eurvvv</div>
+<div >{{titel}}</div>
+<div
+class="movitsComponents "
+[ngStyle]="{'border':kolHay.price>10 ? '5px solid green' :'5px solid red'}"
+[ngClass]="{'startclas':kolHay.price>10}"
+>
+{{kolHay.name}}
+</div> -->
+<div class="comp">
+שם{{movis.name}}
+מחיר : {{movis.price}}
+תאריך :{{movis.craeiteDate}}
+מין  : {{movis.gunus}}
+מספר סידורי  :{{ind}}
+</div>
+<button ((click)="ou1(3)")>ניהול אירועיים</button>
+
+<!-- <p>תאריך יצירה: {{kolHay.craeiteDate | date:"MM/dd/yy"}} </p>
+<button (click)="chngeprice($event)">שנוי מחיר</button> -->
+

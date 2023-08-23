@@ -1,0 +1,27 @@
+<h1>{{famly| titlecase}}--------{{num}}===={{lisrchil.name}}</h1>
+
+<div
+*ngIf="'a'<'b'"
+[ngStyle]="{'font-family': 'verdana'}"
+[ngStyle]="{'border': lisrchil.age > 5  ? '10px solid red' : '10px solid yellow' ,'font-size':num+'px'}"
+[ngClass]="{'abbaclas sa': lisrchil.age > 7 }"
+
+>
+<span [ngSwitch]="lisrchil.gunus">
+<p *ngSwitchCase="valenum.men">
+בן***
+</p>
+<p *ngSwitchCase="valenum.weman">
+בת**
+</p>
+<p *ngSwitchDefault>
+לא נבחר
+</p>
+</span>
+<p class="name">{{lisrchil.name |uppercase}}</p>
+<p class="age">{{lisrchil.age}}</p>
+<p class="Id">{{lisrchil.id}}</p>
+<p class="craeiteDate">{{lisrchil.craeiteDate |date :'medium'}}</p>
+<p class="gunus">{{lisrchil.gunus}}</p>
+<button (click)="del(indexn)">מחיקת ילד</button>
+</div>

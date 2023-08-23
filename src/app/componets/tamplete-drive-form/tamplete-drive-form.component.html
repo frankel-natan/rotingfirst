@@ -1,0 +1,41 @@
+<p>tamplete-drive-form works!</p>
+<form action="" novalidate #f="ngForm" (submit)="subfom()">
+<fieldset ngModelGroup="tzipi">
+  <p class="name" >שם</p>
+  <input ngModel type="text" name="libi">
+  <p class="famely">משפחה</p>
+  <input ngModel type="password" name="famaly">
+</fieldset>
+
+<div class="grip-form">
+  <label>אימייל</label>
+  <input  type="email">
+  <input ngModel name="email"  type="email">
+</div>
+<div class="grip-form">
+  <label>אימייל</label>
+  <input ngModel name="email2" type="email">
+</div>
+<div class="grip-form">
+  <label>סיסמה</label>
+  <input ngModel name="pass" type="password">
+  <div class="erore" *ngIf="f.submitted && f.controls['email2'].value ==10 && form.controls['email'].value==12">אין נתונים</div>
+</div>
+<div class="grip-form">
+  <label>שפה</label>
+  <select class="drup-lange" ngModel name="selectlange">
+    <option value=" " disabled selected >בחר שפה</option>
+    <option>עברית</option>
+    <option>אנגלית</option>
+    <option>רוסית</option>
+    <option>אידיש</option>
+    <option *ngFor="let item of lange" [value]="item">{{item}}</option>
+  </select>
+</div>
+<button type="submit">שלח טופס</button>
+</form>
+<pre>
+  {{f.value | json }}
+</pre>
+
+

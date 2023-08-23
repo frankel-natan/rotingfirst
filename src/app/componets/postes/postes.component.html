@@ -1,0 +1,10 @@
+<p>postes works!</p>
+<div *ngIf="one">
+  <h1>{{one}}</h1>
+  <h1>{{tow}}</h1>
+
+</div>
+
+<h5 *ngIf="!!arrpost && arrpost.length">
+  <li *ngFor="let item of arrpost">{{item.id}}*** {{item.userid}}---{{item.title}}+++{{item.body}}</li>
+</h5>
